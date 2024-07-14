@@ -32,7 +32,7 @@ const Home = () => {
     })
 
     // console.log(messages)
-  }, [])
+  }, [messagesRef])
 
   useEffect(() => {
     // let data
@@ -49,7 +49,7 @@ const Home = () => {
     })
     // setUsers(data)
     // console.log("users", data)
-  }, [])
+  }, [usersRef])
   
   // console.log(messages)
   // let msg =[]
@@ -66,7 +66,7 @@ const Home = () => {
     push(usersRef, {
       name: loggedName,
     })
-  }, [])
+  }, [loggedName, usersRef])
 
   // set Name in localStorage
   const handleSubmit = (e) => {
