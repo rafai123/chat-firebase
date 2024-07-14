@@ -66,7 +66,7 @@ const Home = () => {
     push(usersRef, {
       name: loggedName,
     })
-  }, [loggedName, usersRef])
+  }, [loggedName])
 
   // set Name in localStorage
   const handleSubmit = (e) => {
