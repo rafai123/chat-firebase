@@ -126,7 +126,7 @@ const Home = () => {
             <div className="overflow-auto flex w-full flex-col h-5/6">
               {messages.map((message) => {
                 return (
-                  <MessageBox sender={message.sender} msg={message.message}  />
+                  <MessageBox key={message.id} sender={message.sender} msg={message.message}  />
                 )
               })}
               {/* <MessageBox sender="Udin bi asep" msg={"Gweh Iam fine"} /> */}
